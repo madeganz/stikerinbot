@@ -7,12 +7,13 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 ┌─〔 %me 〕
-├ Hai, %name!
+├ Hai kak, %name!
 │
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)* [%xp4levelup]
-├ %totalexp XP secara Total
+├ Tersisa: %limit Limit
+├ Role: %role
+├ Level: %level (%exp / %maxexp) [%xp4levelup]
+│ 
+├ Xp %totalexp XP secara Total
 │ 
 ├ Tanggal: *%week %weton, %date*
 ├ Tanggal Islam: *%dateIslamic*
@@ -20,15 +21,13 @@ const defaultMenu = {
 │
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
-├ Github:
-├ %github
 └────
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
-*%npmname@^%version*
+*Made-Botz@^%version*
 ${'```%npmdesc```'}
 `,
 }
