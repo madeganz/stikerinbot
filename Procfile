@@ -1,1 +1,1 @@
-web: node . --server --restrict --autoread
+web: node . --restrict --autoread
